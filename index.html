@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" type="text/javascript"></script>
+	<title>SEPTA Regional Rail Fare Calculator</title>
+</head>
+<body onload="clear()">
+   	<div class="container">
+
+         <div id="first">
+           <div id="second">
+              <div id="title">
+                   <img src="img/logo.jpeg" width="50px" height="50px" id="logo">
+                  <h3 style="float:left;font-size:30px;color:indianred;margin-left: 105px;margin-top:15px;">Regional Rail Fares</h3>
+              </div>
+               <div class="destination">
+                   <h3 style="text-align: center">Where Are You Going?</h3>
+                   <div class="sel1">
+                      <select class="des" onchange="calculate()" id="des">
+                          <option value=''>Select The Zone</option>
+                          <option value="zone1">Zone1</option>
+                          <option value="zone2">Zone2</option>
+                          <option value="zone3">Zone3</option>
+                          <option value="zone4">Zone4</option>
+                          <option value="zone5">Zone5</option>
+                      </select>
+                   </div>
+               </div>
+               <hr>
+
+               <div class="destination1">
+                   <h3 style="text-align: center">When Are You Riding?</h3>
+                   <div class="sel1">
+                       <select class="des" onchange="calculate()" id="des1">
+                           <option value=''>Travel Day/Time</option>
+                           <option value="weekday">Weekday</option>
+                           <option value="evening/weekend">Evening/Weekend</option>
+                           <option value="anytime">Anytime</option>
+                       </select>
+                   </div>
+                   <button data-toggle="collapse" data-target="#help" id="hint" onclick="size()">Hint</button>
+
+                   <div id="help" class="collapse">
+
+                      <p><span style="color:khaki">Weekday:</span><span style="font-family: 'Californian FB';font-weight: bold"> Valid Monday through Friday, 4:00 a.m. - 7:00 p.m.</span></p>
+                           <p style="word-wrap: break-word"><span style="color: lightsteelblue">Evening/Weekend:</span><span style="font-family: 'Californian FB';font-weight: bold">Valid weekdays after 7:00 p.m.; all day Saturday, Sunday and major holidays.</span></p>
+                       <p><span style="color: powderblue">Anytime:</span><span style="font-family: 'Californian FB';font-weight: bold"> Valid Anytime.</span></p>
+                   </div>
+                   <hr style="margin-top: 16px">
+                   <div id="purchase">
+                       <h3 style="text-align: center">Where Will You Purchase Fare?</h3>
+                       <div id="radiooption">
+                           <input type="radio" name="option" id="radio1" value="Advance" onclick="calculate()">
+                           <label for="radio1">Advance</label>
+                           <br>
+                           <input type="radio" name="option" id="radio2" value="Onboard" onclick="calculate()">
+                           <label for="radio1">Onboard</label>
+                       </div>
+                   </div>
+                   <hr style="margin-top: 50px">
+
+                   <div id="rides">
+                       <h3 style="text-align: center">How Many Rides Will You Need?</h3>
+                       <input type="number" id="ridecount" oninput="calculate()">
+                   </div>
+                   <div id="cost">
+                     <h3 style="text-align: center;color: aliceblue;position: relative;top:20px">Your Fare Will Cost</h3>
+                        <div id="result">
+
+                        </div>
+
+                   </div>
+
+               </div>
+
+           </div>
+
+         </div>
+
+
+    </div>
+
+</body>
+</html>

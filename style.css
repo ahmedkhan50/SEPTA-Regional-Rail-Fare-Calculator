@@ -1,0 +1,151 @@
+#first{
+    position: relative;
+    margin-left: 300px;
+    width:500px;
+    height:750px;
+    background-color:darkgrey;
+}
+
+#second{
+
+    margin-top:17px;
+    margin-left:50px;
+    position: absolute;
+    width: 400px;
+    height: 720px;
+    background-color: cadetblue;
+}
+
+#title{
+
+    background-color:black;
+    width:400px;
+    height:60px;
+    position: absolute;
+    float:left;
+}
+
+#logo{
+
+    position: absolute;
+    margin-top: 5px;
+    margin-left: 30px;
+}
+
+.destination{
+
+    margin-top:70px;
+    position:relative;
+    width:400px;
+    height:60px;
+    clear: both;
+
+}
+
+.destination1{
+
+    margin-top:20px;
+    position:relative;
+    width:400px;
+    height:60px;
+    clear: both;
+
+}
+
+.sel1 select{
+
+    width:290px;
+    margin-top:3px;
+    margin-left: 55px;
+    padding:5px;
+    font-size: 25px;
+    height:45px;
+    -webkit-appearance: none;
+    background: url("img/arrow.png") no-repeat;
+    background-size: 30px 30px;
+    background-position-x:240px;
+    background-position-y: 7px;
+    border:2px solid black;
+    border-radius: 10px;
+}
+
+.des option{
+
+    background-color:darkorange;
+}
+
+hr{
+
+    margin-top:45px;
+    border:0px;
+    height: 1px;
+    background: white;
+    margin-bottom:5px;
+}
+
+#hint{
+
+    width:60px;
+    height:25px;
+    margin-left:160px;
+    margin-top:20px;
+    color:aliceblue;
+    background-color:indianred;
+    border: none;
+}
+
+#purchase{
+
+    margin-top:20px;
+    width:400px;
+    height:60px;
+}
+
+#radiooption{
+
+    margin-left: 55px;
+}
+
+input[type="radio"]{
+
+    margin-left: 50px;
+    width: 60px;
+    height: 15px;
+}
+
+label{
+
+    font-size: 20px;
+    margin-left: -15px;
+}
+
+input[type="number"]{
+
+    width:70px;
+    height:45px;
+    margin-left: 150px;
+    font-size:xx-large;
+    text-align: center;
+}
+
+#cost{
+
+    width:400px;
+    height:120px;
+    background-color: black;
+    margin-top: 30px;
+}
+
+#result{
+
+    width:120px;
+    height:60px;
+    border:2px solid red;
+    margin-left:140px;
+    margin-top:25px;
+    color:aliceblue;
+    font-size:xx-large;
+    text-align: center;
+
+}
+
